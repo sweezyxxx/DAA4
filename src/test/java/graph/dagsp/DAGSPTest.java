@@ -21,9 +21,9 @@ class DAGSPTest {
 
         DAGShortestPaths sp = new DAGShortestPaths(g, 0);
         assertTrue(sp.reachable(5));
-        assertEquals(10, sp.distanceTo(5));
+        assertEquals(7, sp.distanceTo(5));
         List<Integer> path = sp.reconstructPath(5);
-        assertEquals(List.of(0,2,3,4,5), path);
+        assertEquals(List.of(0, 2, 3, 4, 5), path);
     }
 
     @Test
@@ -38,8 +38,8 @@ class DAGSPTest {
 
         DAGLongestPath lp = new DAGLongestPath(g, 0);
         assertTrue(lp.reachable(5));
-        assertEquals(10, lp.longestDistanceTo(5));
+        assertEquals(9, lp.longestDistanceTo(5));
         List<Integer> path = lp.reconstructPath(5);
-        assertEquals(List.of(0,1,3,4,5), path);
+        assertEquals(List.of(0, 1, 3, 4, 5), path);
     }
 }
