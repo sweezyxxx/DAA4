@@ -17,6 +17,10 @@ public class Main {
             System.out.println(g);
             System.out.println("weight_model: " + pg.weightModel);
             System.out.println("source: " + pg.source);
+            graph.scc.TarjanSCC tarjan = new graph.scc.TarjanSCC(g);
+            graph.scc.SCCResult scc = tarjan.run();
+            System.out.println("\nSCC components:");
+            System.out.println(scc);
         } catch (Exception e) {
             System.err.println("Failed to parse JSON file: " + f.getAbsolutePath());
             e.printStackTrace();

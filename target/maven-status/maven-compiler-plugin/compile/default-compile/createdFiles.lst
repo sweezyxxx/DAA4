@@ -1,6 +1,8 @@
+graph\scc\TarjanSCC.class
 graph\io\JsonParser$ParsedGraph.class
-graph\util\Main.class
+graph\scc\SCCResult.class
 graph\io\JsonParser.class
 graph\model\Node.class
-graph\model\Edge.class
 graph\model\Graph.class
+graph\util\Main.class
+graph\model\Edge.class
